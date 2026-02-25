@@ -8,7 +8,12 @@ export const mockSignIn = async (credentials: AuthCredentials): Promise<AuthUser
   return { id: "user_1", email: credentials.email }
 }
 
-export const mockSignUp = async (credentials: AuthCredentials): Promise<AuthUser> => {
+export const mockSignUp = async (credentials: AuthCredentials & {
+  name: string
+  shopName: string
+  address: string
+  phone: string
+}): Promise<AuthUser> => {
   if (!credentials.email || !credentials.password) {
     throw new Error("Invalid credentials")
   }

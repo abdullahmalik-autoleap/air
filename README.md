@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Autoleap AIR - AI Voice Assistant Dashboard
 
-## Getting Started
+A modern Next.js application built with React, TypeScript, and TailwindCSS for managing AI voice assistant calls and analytics.
 
-First, run the development server:
+## 🚀 Quick Start
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+- Node.js 18+ (recommended: 20.x)
+- npm, yarn, pnpm, or bun package manager
+
+### Installation
+
+1. **Extract the project files** to your desired directory
+2. **Navigate to the project directory:**
+   ```bash
+   cd air
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+5. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🏗️ Tech Stack
+
+- **Framework:** Next.js 15.5.2
+- **Language:** TypeScript
+- **Styling:** TailwindCSS v4
+- **UI Components:** Radix UI + Custom Components
+- **Animations:** Framer Motion, GSAP
+- **Charts:** Recharts
+- **Forms:** React Hook Form + Zod validation
+- **3D Graphics:** Three.js + React Three Fiber
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── (auth)/            # Authentication pages
+│   └── (app)/             # Main application pages
+├── components/            # Reusable UI components
+│   ├── dashboard/         # Dashboard-specific components
+│   ├── shared/            # Shared components
+│   └── ui/                # Base UI components
+├── features/              # Feature-based modules
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+├── providers/             # Context providers
+└── types/                 # TypeScript type definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project uses:
+- **TailwindCSS v4** for styling
+- **ESLint** for code linting
+- **TypeScript** for type safety
+- **Next.js** with App Router
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚨 Troubleshooting
 
-## Learn More
+### Common Issues:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Node version compatibility:** Ensure you're using Node.js 18+ 
+2. **Package manager conflicts:** Clear node_modules and reinstall if needed
+3. **Port conflicts:** If port 3000 is busy, Next.js will automatically use the next available port
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### If you encounter issues:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Clear cache and reinstall
+rm -rf node_modules package-lock.json
+npm install
 
-## Deploy on Vercel
+# Or with yarn
+rm -rf node_modules yarn.lock
+yarn install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This project uses mock data for development
+- All API calls are currently mocked in the `/server/mock/` directory
+- The project is configured for development and ready for production deployment
+
+## 🤝 Contributing
+
+Please follow the existing code style and patterns when contributing to this project.
